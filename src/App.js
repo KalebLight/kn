@@ -9,6 +9,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p className='underline'>
          Se tudo der certo, esse vai ser o site da gente
+
+         teste tailwind
         </p>
         <a
           className="App-link"
