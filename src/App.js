@@ -1,27 +1,23 @@
 import logo from './logo.svg';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import './App.css';
+import { Nav } from './components/Nav/Nav';
+import Hamburguer from './components/Nav/hamburguer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className='underline'>
-         Se tudo der certo, esse vai ser o site da gente
+    <Router>
+      <Nav></Nav>
 
-         teste tailwind
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p className="underline">
+            Se tudo der certo, esse vai ser o site da gente teste tailwind
+          </p>
+        </header>
+      </div>
+    </Router>
   );
 }
 
