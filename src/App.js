@@ -1,12 +1,11 @@
 import logo from './logo.svg';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+
 import './App.css';
 import { Nav } from './components/Nav/Nav';
-import Hamburguer from './components/Nav/hamburguer';
 
 function App() {
   return (
-    <Router>
+    <div>
       <Nav></Nav>
 
       <div className="App">
@@ -17,7 +16,7 @@ function App() {
           </p>
         </header>
       </div>
-    </Router>
+    </div>
   );
 }
 
