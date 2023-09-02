@@ -5,17 +5,21 @@ import { Nav } from './components/Nav/Nav';
 
 function App() {
   return (
-    <div>
-      <Nav></Nav>
-
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p className="underline">
-            Se tudo der certo, esse vai ser o site da gente teste tailwind
-          </p>
-        </header>
-      </div>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p className="underline">
+          Se tudo der certo, esse vai ser o site da gente
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
     </div>
   );
 }
